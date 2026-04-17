@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT SIDE (IMAGE + LOGO) -->
+  <div class="left">
+  <div class="logo">
+    <img src="/Images/odin-lined.png" alt="Odin Logo">
+    <h1>ODIN</h1>
+  </div>
+</div>
+
+  <!-- RIGHT SIDE (FORM) -->
+  <div class="right">
+
+    <div class="intro">
+      <p>
+        This is not a real online service. You know you need something like this in your life
+        to help you realize your deepest dreams.
+        <br><br>
+        Sign up <strong>now</strong> to get started.
+      </p>
+      <p><em>You know you want to.</em></p>
+  </div>
+
+    <div class="form-section">
+      <h2>Let’s do this!</h2>
+
+      <form>
+        <div class="form-row">
+          <div>
+            <label>FIRST NAME</label>
+            <input type="text" placeholder="Rob" required>
+          </div>
+
+          <div>
+            <label>LAST NAME</label>
+            <input type="text" placeholder="Odinson" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label>EMAIL</label>
+            <input type="email" placeholder="Example@mail.com" required>
+          </div>
+
+          <div>
+            <label>PHONE NUMBER</label>
+            <input type="tel" placeholder="+234" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+              <!-- PASSWORD -->
+           <div class="input-group">
+                <label for="password">PASSWORD</label>
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  required 
+                  minlength="6"
+                  placeholder="Enter password">
+              </div>
+
+              <!-- CONFIRM PASSWORD -->
+              <div class="input-group">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input 
+                  type="password" 
+                  id="confirm-password" 
+                  name="confirm-password" 
+                  required 
+                  minlength="6"
+                  placeholder="Confirm password">
+              </div>
+
+            </div>
+
+            <!-- ERROR MESSAGE -->
+            <p id="error-message" style="color: red; display: none;">
+              Passwords do not match!
+            </p>
+        </form>
+        <div class="footer">
+            <button type="submit">Create Account</button>
+         
+
+          <p class="login">Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
